@@ -15,4 +15,7 @@
     "imageid": "ubuntu-4GB",
     "cpu": 4
   }
+  "interface": {
+    "layout": "ide"
+  }
 }
