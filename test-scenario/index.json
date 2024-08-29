@@ -1,6 +1,6 @@
 {
-    "title": "Code Actions",
-    "description": "Let users copy or exec code blocks",
+    "title": "Εισαγωγή στο kubernetes",
+    "description": " na miliso analitika gia to k8s",
     "details": {
       "intro": {
         "text": "intro.md"
