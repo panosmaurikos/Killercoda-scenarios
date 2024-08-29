@@ -12,7 +12,7 @@
     ]
   },
   "backend": {
-    "imageid": "ubuntu-20.04-4GB",
+    "imageid": "ubuntu-4GB",
     "cpu": 4
   },
   "interface": {
