@@ -1,17 +1,18 @@
 {
-    "title": "Εισαγωγή στο kubernetes",
-    "description": " na miliso analitika gia to k8s",
-    "details": {
-      "intro": {
-        "text": "intro.md"
-      },
-      "steps": [
-        {
-          "text": "step1.md"
-        }
-      ]
+  "title": "Εισαγωγή στο Kubernetes",
+  "description": "Let users copy or exec code blocks",
+  "details": {
+    "intro": {
+      "text": "intro.md"
     },
-    "backend": {
-      "imageid": "ubuntu"
-    }
+    "steps": [
+      {
+        "text": "step1.md"
+      }
+    ]
+  },
+  "backend": {
+    "imageid": "ubuntu-4GB",
+    "cpu": 4
   }
+}
