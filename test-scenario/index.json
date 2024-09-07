@@ -1,5 +1,5 @@
 {
-  "title": "Εισαγωγή στο Kubernetes",
+  "title": "Custom Resource Definitions (CRD)",
   "description": "Let users copy or exec code blocks",
   "details": {
     "intro": {
