@@ -13,6 +13,12 @@
   },
   "backend": {
     "imageid": "kubernetes-kubeadm-1node-4GB",
+    "init": [
+      "sudo rm -rf /usr/local/go",
+      "sed -i '/\\/usr\\/local\\/go/d' ~/.bashrc",
+      "sed -i '/\\/usr\\/local\\/go/d' ~/.profile",
+      "source ~/.bashrc"
+    ]
   },
   "interface": {
     "layout": "ide"
