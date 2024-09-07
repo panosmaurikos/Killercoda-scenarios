@@ -13,7 +13,6 @@
   },
   "backend": {
     "imageid": "kubernetes-kubeadm-1node-4GB",
-    "cpu": 2
   },
   "interface": {
     "layout": "ide"
