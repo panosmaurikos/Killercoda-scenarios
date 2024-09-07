@@ -13,11 +13,11 @@
   },
   "backend": {
     "imageid": "kubernetes-kubeadm-1node-4GB",
-    "provision": [
-      {
-        "script": "sudo rm -rf /usr/local/go && sed -i '/\\/usr\\/local\\/go\\/bin/d' ~/.bashrc"
-      }
-    ]
+   "provision": [
+  {
+    "script": "echo 'Provision started' >> /tmp/provision.log && sudo rm -rf /usr/local/go && sed -i '/\\/usr\\/local\\/go\\/bin/d' ~/.bashrc && echo 'Provision completed' >> /tmp/provision.log"
+  }
+]
   },
   "interface": {
     "layout": "ide"
