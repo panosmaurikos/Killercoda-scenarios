@@ -3,12 +3,13 @@
   "description": "Let users copy or exec code blocks",
   "details": {
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "background": "background.sh"
     },
     "steps": [
       {
         "text": "step1.md",
-        "background": "background.sh"
+        
       }
     ]
   },
