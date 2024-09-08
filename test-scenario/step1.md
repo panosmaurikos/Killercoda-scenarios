@@ -1,40 +1,7 @@
+# Step 1: KubeBuilder Installation
 
-### Single line code blocks can be copied by default
-`copy me`
+To begin, we need to install KubeBuilder on our Kubernetes cluster. Run the following commands:
 
-### It can also be disabled
-`copying disabled`{{}}
-
-### Execute a command per click
-`ls -lh`{{exec}}
-
-### Send Ctrl+c before execute
-Run a blocking command:
-`sleep 1d`{{exec}}
-
-End it and run another:
-`whoami`{{exec interrupt}}
-
-### Copy multiline code block
-```
-uname -r
-pwd
-```{{copy}}
-
-### Execute multiline code block
-
-```
-uname -r
-pwd
-```{{exec}}
-
-
-### Execute multiline code block with Ctrl+c
-Run a blocking command:
-`sleep 1d`{{exec}}
-
-End it and run others:
-```
-uname -r
-whoami
-```{{exec interrupt}}
+```bash
+curl -L -o kubebuilder "https://go.kubebuilder.io/dl/latest/$(go env GOOS)/$(go env GOARCH)"
+chmod +x kubebuilder && sudo mv kubebuilder /usr/local/bin/
