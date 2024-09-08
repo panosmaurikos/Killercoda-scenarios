@@ -1,3 +1,4 @@
+sudo rm -rf /usr/local/go
 
 sudo apt-get remove -y golang-go
 
