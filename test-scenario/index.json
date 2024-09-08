@@ -8,14 +8,14 @@
     "steps": [
       {
         "text": "step1.md",
-         "background": "background.sh"
+        "background": "background.sh"
       }
     ]
   },
   "backend": {
     "imageid": "kubernetes-kubeadm-1node-4GB",
     "poststart": [
-      "bash ~/test.sh"
+      "bash ~/background.sh"
     ]
   },
   "interface": {
