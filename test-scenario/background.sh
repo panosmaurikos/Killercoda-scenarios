@@ -1,2 +1,3 @@
-sudo apt-get remove -y golang-go
-sudo apt-get autoremove -y
+wget https://raw.githubusercontent.com/chadmcrowell/flux-playground/main/bucket-source/bucket-policy.json
+
+echo "test"
