@@ -1,4 +1,4 @@
-#!/bin/bash
+
 
 sudo apt-get remove -y golang-go
 
