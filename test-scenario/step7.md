@@ -14,4 +14,5 @@ Then we check if the deployments are running.
 
 ~~~
 kubectl get pods -A 
+kubectl describe pods <podsname>
 ~~~
