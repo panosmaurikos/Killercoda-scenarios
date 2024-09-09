@@ -1,7 +1,7 @@
 
 # Implementing the Controller Logic. 
 
-To create custom pods using the controller, we need to modify the following files:
+To create custom pods using the controller, we need to modify the following files in our project directory:
 
 1) myapp_controller.go
 2) myapp_controller_test.go
