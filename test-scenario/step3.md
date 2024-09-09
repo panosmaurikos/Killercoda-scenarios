@@ -1,3 +1,4 @@
+## Modify myapp_controller.go
 In this step, we'll modify the myapp_controller.go file to implement the reconciliation logic that manages the lifecycle of MyApp resources. This is where we'll define how our custom resource should behave.
 
 ~~~
