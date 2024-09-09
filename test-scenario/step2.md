@@ -1,6 +1,7 @@
 
 ## Implementing the Controller Logic. 
 
+![Alt text](.png)
 To create custom pods using the controller, we need to modify the following files in our project directory:
 
 1) myapp_controller.go
