@@ -1,7 +1,7 @@
 
 ## Implementing the Controller Logic. 
 
-![Alt text](458465517_1279689876377734_2819053828428817669_n.png)
+<img src="458465517_1279689876377734_2819053828428817669_n.png" width="500px"> 
 To create custom pods using the controller, we need to modify the following files in our project directory:
 
 1) myapp_controller.go
