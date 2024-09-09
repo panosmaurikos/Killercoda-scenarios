@@ -34,6 +34,7 @@ make install
 
 For quick feedback and code-level debugging, let's run our controller:
 
+> **_NOTE:_**  This may take a few minutes to run, be paisent .
 ```bash
 make run
 ```{{exec}}
