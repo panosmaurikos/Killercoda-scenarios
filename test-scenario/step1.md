@@ -1,6 +1,5 @@
 # Step 1: KubeBuilder Installation
-
-To begin, we need to install KubeBuilder on our Kubernetes cluster. Run the following commands:
+To begin, we need to install KubeBuilder on our Kubernetes cluster. KubeBuilder is a powerful framework for building Kubernetes APIs and controllers. It's based on the Go programming language and provides tools to scaffold projects, generate code, and manage custom resources.Run the following commands:
 
 ```bash
 curl -L -o kubebuilder "https://go.kubebuilder.io/dl/latest/$(go env GOOS)/$(go env GOARCH)"
