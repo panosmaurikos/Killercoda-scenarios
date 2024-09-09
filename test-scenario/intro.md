@@ -1,8 +1,10 @@
 # Introduction to Custom Resource Definitions (CRDs)
 
-Custom Resource Definitions (CRDs) allow Kubernetes users to extend the Kubernetes API by adding their own custom resources. This capability is essential for building Kubernetes operators and managing application-specific configurations.
+In this tutorial, we will explore how to extend Kubernetes using Custom Resource Definitions (CRDs) and build a custom Kubernetes controller using KubeBuilder. By the end of this tutorial, you will understand how to create custom resources, manage them using controllers, and deploy them in a Kubernetes cluster.
 
-In this tutorial, we will focus on creating a custom resource called `MyApp` and managing its lifecycle using KubeBuilder. We will cover the installation of KubeBuilder, modifying the controller logic, and testing our implementation.
+Why do we need CRDs?
+
+Kubernetes is designed to be extensible, allowing users to introduce new resource types using CRDs. This capability is crucial for implementing custom applications and services that can be managed like native Kubernetes resources.
 
 ## Objectives
 - Understand the concept of CRDs in Kubernetes.
