@@ -1,7 +1,7 @@
 ## Modify myapp_controller.go
 In this step, we'll modify the myapp_controller.go file to implement the reconciliation logic that manages the lifecycle of MyApp resources. This is where we'll define how our custom resource should behave.
 
-~~~
+```
 package controller
 
 import (
@@ -270,6 +270,6 @@ func equalSlices(a, b []string) bool {
         }
         return true
 }
-~~~
+```{{copy}}
 
 This code handles the reconciliation process, ensuring that the desired state specified in the MyApp resource is maintained when Kubernetes resources such as Pods and Services are created, updated, or deleted.
