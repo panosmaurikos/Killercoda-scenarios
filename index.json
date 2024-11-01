@@ -1,0 +1,23 @@
+{
+    "title": "Custom Resource Definitions",
+    "description": "In this tutorial, you will learn how to create CRDs using KubeBuilder and manage them with a custom Kubernetes controller.",
+    "details": {
+      "intro": {
+        "text": "intro.md",
+        "background": "background.sh"
+      },
+      "steps": [
+        {
+          "text": "step1.md"
+        }
+    
+        
+          ]
+    },
+    "backend": {
+      "imageid": "kubernetes-kubeadm-1node-4GB"
+    },
+    "interface": {
+      "layout": "ide"
+    }
+  }
