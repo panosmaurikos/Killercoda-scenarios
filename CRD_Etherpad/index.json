@@ -1,6 +1,6 @@
 {
     "title": "Custom Resource Definitions",
-    "description": "In this tutorial, you will learn how to create CRDs using KubeBuilder and manage them with a custom Kubernetes controller.",
+    "description": "In this tutorial, you will learn how to create CRDs using KubeBuilder. In this example, we'll walk through the steps to define a new CRD for the EtherpadInstance resource. This CRD will enable you to manage Etherpad deployments directly through Kubernetes, allowing for easy setup, configuration, and scaling of Etherpad instances with a MySQL backend.",
     "details": {
       "intro": {
         "text": "first.md",
@@ -11,7 +11,10 @@
           "text": "step1.md"
         }
     
-        
+
+
+
+          
           ]
     },
     "backend": {
