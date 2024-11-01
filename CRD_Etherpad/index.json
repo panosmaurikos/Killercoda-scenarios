@@ -9,11 +9,13 @@
       "steps": [
         {
           "text": "step1.md"
+        },
+         {
+          "text": "step2.md"
+        },
+         {
+          "text": "step3.md"
         }
-    
-
-
-
           
           ]
     },
