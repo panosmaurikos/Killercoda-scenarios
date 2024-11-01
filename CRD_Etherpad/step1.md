@@ -29,7 +29,7 @@ kubebuilder create api --group etherpad --version v1alpha1 --kind EtherpadInstan
 Install the CRDs into the cluster:
 
 ```bash
-make install
+make manifests
 ```{{exec}}
 
 For quick feedback and code-level debugging, let's run our controller:
