@@ -3,7 +3,7 @@
     "description": "In this tutorial, you will learn how to create CRDs using KubeBuilder and manage them with a custom Kubernetes controller.",
     "details": {
       "intro": {
-        "text": "intro.md",
+        "text": "first.md",
         "background": "background.sh"
       },
       "steps": [
