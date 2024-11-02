@@ -1,4 +1,4 @@
-# Step3 Setting Up the EtherpadInstance CRD Example 
+# Step 3: Setting Up the EtherpadInstance CRD Example 
 
 To make the EtherpadInstance example we need to modify the following files in our project directory:
 1) config/crd/bases/etherpad.etherpadinstance.io_etherpadinstances.yaml
