@@ -10,17 +10,17 @@ After initializing the project with KubeBuilder, several key files and directori
 |-- Makefile
 |-- PROJECT
 |-- README.md
-|-- api
-|   `-- v1alpha1
+|-- api 
+|   `-- v1alpha1 # Contains the Custom Resource Definition (CRD) schema for new API.
 |       |-- etherpadinstance_types.go
 |       `-- groupversion_info.go
 |-- bin
 |   |-- controller-gen -> /root/etherpadoperator/bin/controller-gen-v0.16.4
 |   `-- controller-gen-v0.16.4
 |-- cmd
-|   `-- main.go
+|   `-- main.go # This is the entry point for the operator, setting up and starting the controller.
 |-- config
-|   |-- crd
+|   |-- crd #  Defines the Custom Resource Definitions for API. This makes Kubernetes aware of your new resource type.
 |   |   |-- bases
 |   |   |   `-- etherpad.etherpadinstance.io_etherpadinstances.yaml
 |   |   |-- kustomization.yaml
@@ -50,7 +50,7 @@ After initializing the project with KubeBuilder, several key files and directori
 |   |   |-- role.yaml
 |   |   |-- role_binding.yaml
 |   |   `-- service_account.yaml
-|   `-- samples
+|   `-- samples # Contains example custom resources for testing, showing how users would use the custom resource.
 |       |-- etherpad_v1alpha1_etherpadinstance.yaml
 |       `-- kustomization.yaml
 |-- go.mod
@@ -58,7 +58,7 @@ After initializing the project with KubeBuilder, several key files and directori
 |-- hack
 |   `-- boilerplate.go.txt
 |-- internal
-|   `-- controller
+|   `-- controller # Holds controller code, where the logic for reconciling resources resides.
 |       |-- etherpadinstance_controller.go
 |       |-- etherpadinstance_controller_test.go
 |       `-- suite_test.go
