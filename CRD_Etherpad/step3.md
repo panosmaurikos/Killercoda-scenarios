@@ -13,3 +13,4 @@ In each loop, the controller checks if the current state of the resources matche
 
 This approach allows users to declaratively manage complex applications by simply defining the desired state, while the operator handles the details of keeping the environment in sync.
 
+![image](https://github.com/user-attachments/assets/da2150cc-6f1e-4e44-9b7e-9c17e7cb9d2b)
