@@ -6,7 +6,9 @@ To make the EtherpadInstance example we need to modify the following files in ou
 3) internal/controller/etherpadinstance_controller.go
 4) api/v1alpha1/etherpadinstance_types.go
 
-First we make crd file:
+
+First, we modify the CRD file ( ``` config/crd/bases/etherpad.etherpadinstance.io_etherpadinstances.yaml```) by running the following command.
+The CRD file defines the schema for your EtherpadInstance resource, informing Kubernetes about the structure and constraints of this custom resource.
 ```
 echo "
 apiVersion: apiextensions.k8s.io/v1
