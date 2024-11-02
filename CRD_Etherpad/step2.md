@@ -1,7 +1,8 @@
 
+# Step 2: Understanding the Project Structure
+After initializing the project with KubeBuilder, several key files and directories are created. Let’s break down each component and how they contribute to building the operator:
 
 
-![Untitled-2024-10-04-2138](https://github.com/user-attachments/assets/35b2d136-dd78-4a11-8c14-6b9d8dd0da76)
 
 ~~~
 .
