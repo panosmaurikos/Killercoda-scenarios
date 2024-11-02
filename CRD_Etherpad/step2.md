@@ -1,6 +1,6 @@
 
 # Understanding the Project Structure
-After initializing the project with KubeBuilder, several key files and directories are created. Let’s break down each component and how they contribute to building the operator:
+After initializing the project with KubeBuilder, several key files and directories are created. Let’s break down each component:
 
 
 
