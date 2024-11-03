@@ -11,7 +11,7 @@ First, we modify the CRD file config/crd/bases/etherpad.etherpadinstance.io_ethe
 The CRD file defines the schema for our EtherpadInstance resource, informing Kubernetes about the structure and constraints of this custom resource.
 
 ```
-cat > config/crd/bases/etherpad.etherpadinstance.io_etherpadinstances.yaml << 'EOF'
+tee config/crd/bases/etherpad.etherpadinstance.io_etherpadinstances.yaml << 'END'
 apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
@@ -182,5 +182,5 @@ spec:
         type: object
     served: true
     storage: true
-EOF 
+END
 ```{{exec}}
