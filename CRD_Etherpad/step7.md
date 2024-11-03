@@ -8,8 +8,8 @@ rm api/v1alpha1/etherpadinstance_types.go
 nano api/v1alpha1/etherpadinstance_types.go 
 ~~~
 
-
-
+Add
+~~~
 package v1alpha1
 
 import (
@@ -79,6 +79,6 @@ type EtherpadInstanceList struct {
 func init() {
         SchemeBuilder.Register(&EtherpadInstance{}, &EtherpadInstanceList{})
 }
-
+~~~
 
 
