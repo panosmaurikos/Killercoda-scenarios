@@ -4,7 +4,7 @@ In this step, we’ll modify etherpadinstance_types.go file, which defines the G
 
 ``` rm api/v1alpha1/etherpadinstance_types.go ```{{exec}}
 
-``` nano api/v1alpha1/etherpadinstance_types.go ```{{ecec}}
+``` nano api/v1alpha1/etherpadinstance_types.go ```{{exec}}
 
 ~~~
 package v1alpha1
