@@ -65,5 +65,6 @@ func init() {
 
 
 END
-sed -i "/<span class='kc-markdown-code-copy'><\/span>/d" api/v1alpha1/etherpadinstance_types.go
+sed -i "s|<span class='kc-markdown-code-copy'></span>||g" api/v1alpha1/etherpadinstance_types.go
+
 ```{{exec}}
