@@ -13,6 +13,8 @@ kubectl apply -f config/crd/bases/etherpad.etherpadinstance.io_etherpadinstances
 ```
 echo "
 
+
+" > etherpad-config.yaml
  ```{{exec}}
 ```
 
