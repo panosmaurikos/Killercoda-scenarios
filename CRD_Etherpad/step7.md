@@ -6,8 +6,7 @@ In this step, we’ll modify etherpadinstance_types.go file, which defines the G
 
 
 
-
-~~~{
+```
 package v1alpha1
 
 import (
@@ -67,7 +66,6 @@ type EtherpadInstance struct {
 //+kubebuilder:object:root=true
 
 // EtherpadInstanceList contains a list of EtherpadInstance
-
 type EtherpadInstanceList struct {
         metav1.TypeMeta `json:",inline"`
         metav1.ListMeta `json:"metadata,omitempty"`
@@ -77,6 +75,5 @@ type EtherpadInstanceList struct {
 func init() {
         SchemeBuilder.Register(&EtherpadInstance{}, &EtherpadInstanceList{})
 }
-}~~~
-
+```{{copy}}
 
