@@ -4,11 +4,14 @@ After the changes, make sure we run the make command to update the generate file
 make run
 ~~~
 Deploy the CR file , the CRD and configmap file to Kubernetes cluster:
-~~~
-kubectl apply -f config/samples/etherpad_v1alpha1_etherpadinstance.yaml
 
+```
+kubectl apply -f config/samples/etherpad_v1alpha1_etherpadinstance.yaml
+```{{exec}}
+
+```
 kubectl apply -f config/crd/bases/etherpad.etherpadinstance.io_etherpadinstances.yaml
-~~~
+```{{exec}}
 
 ``` 
 tee etherpad-config.yaml << 'END'
@@ -71,7 +74,7 @@ END
 
 ```
 kubectl apply -f etherpad-config.yaml
- ```{{exec}}
+```{{exec}}
 
 Then we check if the pods are running.
 
