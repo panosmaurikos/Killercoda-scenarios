@@ -78,6 +78,6 @@ type EtherpadInstanceList struct {
 func init() {
         SchemeBuilder.Register(&EtherpadInstance{}, &EtherpadInstanceList{})
 }
-```{{copy}}
+```
 
 
