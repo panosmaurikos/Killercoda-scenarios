@@ -11,7 +11,7 @@ kubectl apply -f config/crd/bases/etherpad.etherpadinstance.io_etherpadinstances
 ~~~
 
 ``` 
-cat << EOF < /root/etherpad-config.yaml
+cat << EOF > /root/etherpad-config.yaml
 apiVersion: v1
 kind: ConfigMap
 metadata:
