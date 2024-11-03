@@ -3,13 +3,12 @@ In this step, we’ll modify etherpadinstance_types.go file, which defines the G
 
 
 
-~~~
-rm api/v1alpha1/etherpadinstance_types.go 
-nano api/v1alpha1/etherpadinstance_types.go 
-~~~
 
-Add
-~~~
+'rm api/v1alpha1/etherpadinstance_types.go'
+'nano api/v1alpha1/etherpadinstance_types.go' 
+
+
+```
 package v1alpha1
 
 import (
@@ -79,6 +78,6 @@ type EtherpadInstanceList struct {
 func init() {
         SchemeBuilder.Register(&EtherpadInstance{}, &EtherpadInstanceList{})
 }
-~~~
+```{{copy}}
 
 
