@@ -7,7 +7,7 @@ In this step, we’ll modify etherpadinstance_types.go file, which defines the G
 
 
 
-```
+```bash
 package v1alpha1
 
 import (
