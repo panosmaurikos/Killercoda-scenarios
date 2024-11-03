@@ -2,11 +2,6 @@
 In this step, we’ll modify etherpadinstance_types.go file, which defines the Go structs for the EtherpadInstance resource. 
 This file is essential as it translates the schema in our CRD to Go code, specifying the fields that users can set in the EtherpadInstance custom resource.
 
-
-
-
-
-
 ``` 
 tee api/v1alpha1/etherpadinstance_types.go << 'END'
 
@@ -49,35 +44,7 @@ type PodSpec struct {
         Volumes        []corev1.Volume        `json:"volumes,omitempty"`
 }
 
-// EtherpadInstanceStatus defines the observed state of EtherpadInstanceStatus
-type EtherpadInstanceStatus struct {
-        Conditions []metav1.Condition `json:"conditions,omitempty" patchStrategy:"merge" patchMergeKey:"type" protobuf:"bytes,1,rep,name=conditions"`
-        Nodes      []string           `json:"nodes,omitempty"`
-}
 
-//+kubebuilder:object:root=true
-//+kubebuilder:subresource:status
-
-// EtherpadInstance is the Schema for the EtherpadInstance API
-type EtherpadInstance struct {
-        metav1.TypeMeta   `json:",inline"`
-        metav1.ObjectMeta `json:"metadata,omitempty"`
-        Spec   EtherpadInstanceSpec   `json:"spec,omitempty"`
-        Status EtherpadInstanceStatus `json:"status,omitempty"`
-}
-
-//+kubebuilder:object:root=true
-
-// EtherpadInstanceList contains a list of EtherpadInstance
-type EtherpadInstanceList struct {
-        metav1.TypeMeta `json:",inline"`
-        metav1.ListMeta `json:"metadata,omitempty"`
-        Items           []EtherpadInstance `json:"items"`
-}
-
-func init() {
-        SchemeBuilder.Register(&EtherpadInstance{}, &EtherpadInstanceList{})
-}
 
 END
 ```{{exec}}
