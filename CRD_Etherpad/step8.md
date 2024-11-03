@@ -11,7 +11,9 @@ kubectl apply -f config/crd/bases/etherpad.etherpadinstance.io_etherpadinstances
 ~~~
 
 ```
+echo "
 
+" 
 ```
 
 Then we check if the pods are running.
