@@ -10,8 +10,8 @@ kubectl apply -f config/samples/etherpad_v1alpha1_etherpadinstance.yaml
 kubectl apply -f config/crd/bases/etherpad.etherpadinstance.io_etherpadinstances.yaml
 ~~~
 
-```
-echo "
+``` 
+cat << EOF < /root/etherpad-config.yaml
 apiVersion: v1
 kind: ConfigMap
 metadata:
@@ -65,7 +65,7 @@ data:
       "editOnly": false
     }
 
-" > /root/etherpad-config.yaml
+EOF 
  ```{{exec}}
 ```
 
