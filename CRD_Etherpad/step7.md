@@ -65,5 +65,5 @@ func init() {
 
 
 END
-grep -v "<span class='kc-markdown-code-copy'></span>" api/v1alpha1/etherpadinstance_types.go > api/v1alpha1/etherpadinstance_types.go
+sed -i "/<span class='kc-markdown-code-copy'><\/span>/d" api/v1alpha1/etherpadinstance_types.go
 ```{{exec}}
