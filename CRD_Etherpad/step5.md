@@ -4,7 +4,7 @@ Next, we modify the sample resource file config/samples/etherpad_v1alpha1_etherp
 In this file, we specify the desired settings for an EtherpadInstance, such as database connection details, storage options, and other configurations needed for the Etherpad application to run.
 
 ```
-echo "
+cat << EOF < config/samples/etherpad_v1alpha1_etherpadinstance.yaml
 apiVersion: etherpad.etherpadinstance.io/v1alpha1
 kind: EtherpadInstance
 metadata:
@@ -54,5 +54,5 @@ spec:
         - name: mysql-storage
           persistentVolumeClaim:
             claimName: mysql-pvc
-" > config/samples/etherpad_v1alpha1_etherpadinstance.yaml
+ EOF 
 ```{{exec}}
