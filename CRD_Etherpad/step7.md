@@ -2,19 +2,19 @@
 In this step, we’ll modify etherpadinstance_types.go file, which defines the Go structs for the EtherpadInstance resource. This file is essential as it translates the schema in our CRD to Go code, specifying the fields that users can set in the EtherpadInstance custom resource.
 
 
+
 ```
-tee api/v1alpha1/etherpadinstance_types.go << 'END' 
+rm api/v1alpha1/etherpadinstance_types.go
+nano api/v1alpha1/etherpadinstance_types.go 
+```{{exec}}
+
+```
 package v1alpha1
 
 import (
         corev1 "k8s.io/api/core/v1"
         metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
-
-//type PodEnv struct {
-//    Name  string `json:"name"`
-//    Value string `json:"value"`
-//}
 
 // ConfigMap defines the configuration for the Etherpad instance's ConfigMap
 type ConfigMapSpec struct {
@@ -78,7 +78,7 @@ type EtherpadInstanceList struct {
 func init() {
         SchemeBuilder.Register(&EtherpadInstance{}, &EtherpadInstanceList{})
 }
-END
-```{{exec}}
+
+```{{copy}}
 
 
