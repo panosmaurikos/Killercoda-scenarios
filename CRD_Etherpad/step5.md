@@ -55,4 +55,4 @@ spec:
           persistentVolumeClaim:
             claimName: mysql-pvc
 " > config/samples/etherpad_v1alpha1_etherpadinstance.yaml
-``` {{exec}}
+```{{exec}}
