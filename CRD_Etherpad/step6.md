@@ -12,7 +12,7 @@ With this modification, the controller will automatically manage EtherpadInstanc
 
 
 ```
-cat << EOF < internal/controller/etherpadinstance_controller.go
+cat << EOF > internal/controller/etherpadinstance_controller.go
 package controller
 
 import (
