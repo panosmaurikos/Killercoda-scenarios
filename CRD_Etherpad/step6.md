@@ -4,9 +4,9 @@ In this file, we implement the reconciliation loop, which continuously checks fo
 
 Here, we’ll add code to:
 
-Create or update Pods, Services, and any other resources needed for Etherpad to run.
-Manage communication between Etherpad and its MySQL backend by setting up the necessary Services.
-Handle resource deletion to clean up related resources when an EtherpadInstance is deleted.
+- Create or update Pods, Services, and any other resources needed for Etherpad to run.
+- Manage communication between Etherpad and its MySQL backend by setting up the necessary Services.
+- Handle resource deletion to clean up related resources when an EtherpadInstance is deleted.
 With this modification, the controller will automatically manage EtherpadInstance resources and their dependencies in the cluster, ensuring that the application runs as specified.
 
 
