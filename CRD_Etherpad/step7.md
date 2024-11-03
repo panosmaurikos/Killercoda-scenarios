@@ -6,7 +6,7 @@ In this step, we’ll modify etherpadinstance_types.go file, which defines the G
 
 
 ```bash
-
+tee api/v1alpha1/etherpadinstance_types.go << 'END' 
 package v1alpha1
 
 import (
@@ -76,7 +76,7 @@ type EtherpadInstanceList struct {
 func init() {
         SchemeBuilder.Register(&EtherpadInstance{}, &EtherpadInstanceList{})
 }
-
+END
 ```{{exec}}
 
 
