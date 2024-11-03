@@ -79,4 +79,4 @@ func init() {
         SchemeBuilder.Register(&EtherpadInstance{}, &EtherpadInstanceList{})
 }
 " > api/v1alpha1/etherpadinstance_types.go
-``` {{exec}}
+```{{exec}}
