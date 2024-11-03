@@ -69,7 +69,9 @@ data:
 END
  ```{{exec}}
 
-``` kubectl apply -f etherpad-config.yaml ```{{exec}}
+```
+kubectl apply -f etherpad-config.yaml
+ ```{{exec}}
 
 Then we check if the pods are running.
 
