@@ -1,5 +1,5 @@
 ## Deploying the Custom Resource and verify the Deployment 
-After the changes, make sure we run the make command to update the generate files and apply the changes.
+After the changes, make sure we run the make command to update the generate files and apply the changes in a new tab.
 ~~~
 make run
 ~~~
