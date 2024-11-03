@@ -11,7 +11,7 @@ kubectl apply -f config/crd/bases/etherpad.etherpadinstance.io_etherpadinstances
 ~~~
 
 ``` 
-tee /root/etherpad-config.yaml << 'END'
+tee etherpad-config.yaml << 'END'
 
 apiVersion: v1
 kind: ConfigMap
@@ -68,7 +68,8 @@ data:
 
 END
  ```{{exec}}
-```
+
+``` kubectl apply -f etherpad-config.yaml ```{{exec}}
 
 Then we check if the pods are running.
 
