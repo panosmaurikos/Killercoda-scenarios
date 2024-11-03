@@ -1,4 +1,4 @@
-Now, let's modify the controller file ```internal/controller/etherpadinstance_controller.go```. This is the core of our operator’s functionality, as it contains the logic that manages the lifecycle of EtherpadInstance resources.
+Now, let's modify the controller file ```internal/controller/etherpadinstance_controller.go```. This is the core of operator’s functionality, as it contains the logic that manages the lifecycle of EtherpadInstance resources.
 
 In this file, we implement the reconciliation loop, which continuously checks for changes in EtherpadInstance custom resources. Whenever a new resource is created or an existing one is modified, the controller takes action to ensure the Kubernetes environment matches the desired state specified in the custom resource.
 
