@@ -84,6 +84,6 @@ func init() {
         SchemeBuilder.Register(&EtherpadInstance{}, &EtherpadInstanceList{})
 }
 
-``` {{exec}}
+```{{exec}}
 
 
