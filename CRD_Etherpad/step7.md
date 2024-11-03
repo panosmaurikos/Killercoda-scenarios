@@ -2,10 +2,11 @@
 In this step, we’ll modify etherpadinstance_types.go file, which defines the Go structs for the EtherpadInstance resource. This file is essential as it translates the schema in our CRD to Go code, specifying the fields that users can set in the EtherpadInstance custom resource.
 
 
-```
+``` rm api/v1alpha1/etherpadinstance_types.go ```{{exec}}
 
-tee  api/v1alpha1/etherpadinstance_types.go << 'END'
+``` nano api/v1alpha1/etherpadinstance_types.go ```{{ecec}}
 
+~~~
 package v1alpha1
 
 import (
@@ -80,8 +81,7 @@ type EtherpadInstanceList struct {
 func init() {
         SchemeBuilder.Register(&EtherpadInstance{}, &EtherpadInstanceList{})
 }
+~~~
 
 
 
-END
-```{{exec}}
