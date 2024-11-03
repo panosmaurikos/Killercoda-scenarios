@@ -1,5 +1,5 @@
-# Step 5: Setting Up the EtherpadInstance CRD Example 
-In this step, we’ll modify etherpadinstance_types.go, which defines the Go structs for the EtherpadInstance resource. This file is essential as it translates the schema in our CRD to Go code, specifying the fields that users can set in the EtherpadInstance custom resource.
+# Step 6: Change the etherpadinstance_types.go file
+In this step, we’ll modify ```etherpadinstance_types.go```, which defines the Go structs for the EtherpadInstance resource. This file is essential as it translates the schema in our CRD to Go code, specifying the fields that users can set in the EtherpadInstance custom resource.
 ```
 echo "
 
