@@ -6,7 +6,6 @@ In this file, we specify the desired settings for an EtherpadInstance, such as d
 ```
 
 tee config/samples/etherpad_v1alpha1_etherpadinstance.yaml << 'END'
-
 apiVersion: etherpad.etherpadinstance.io/v1alpha1
 kind: EtherpadInstance
 metadata:
