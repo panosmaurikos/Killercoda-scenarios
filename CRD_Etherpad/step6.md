@@ -12,7 +12,7 @@ With this modification, the controller will automatically manage EtherpadInstanc
 
 
 ```
-echo "
+cat << EOF < internal/controller/etherpadinstance_controller.go
 package controller
 
 import (
@@ -406,5 +406,5 @@ func equalSlices(a, b []string) bool {
         }
         return true
 }
-" > internal/controller/etherpadinstance_controller.go
+EOF 
 ```{{exec}}
