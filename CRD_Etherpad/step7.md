@@ -11,7 +11,12 @@ import (
         metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 )
 
-// ConfigMapSpec defines the configuration for the Etherpad instance's ConfigMap
+//type PodEnv struct {
+//    Name  string `json:"name"`
+//    Value string `json:"value"`
+//}
+
+// ConfigMap defines the configuration for the Etherpad instance's ConfigMap
 type ConfigMapSpec struct {
         Name  string          `json:"name"`
         Items []ConfigMapItem `json:"items,omitempty"`
