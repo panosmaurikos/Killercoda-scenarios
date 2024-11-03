@@ -7,6 +7,7 @@ rm api/v1alpha1/etherpadinstance_types.go
 nano api/v1alpha1/etherpadinstance_types.go 
 ```{{exec}}
 
+
 ```
 package v1alpha1
 
@@ -65,7 +66,6 @@ type EtherpadInstanceStatus struct {
 type EtherpadInstance struct {
         metav1.TypeMeta   `json:",inline"`
         metav1.ObjectMeta `json:"metadata,omitempty"`
-
         Spec   EtherpadInstanceSpec   `json:"spec,omitempty"`
         Status EtherpadInstanceStatus `json:"status,omitempty"`
 }
@@ -73,6 +73,7 @@ type EtherpadInstance struct {
 //+kubebuilder:object:root=true
 
 // EtherpadInstanceList contains a list of EtherpadInstance
+
 type EtherpadInstanceList struct {
         metav1.TypeMeta `json:",inline"`
         metav1.ListMeta `json:"metadata,omitempty"`
@@ -82,6 +83,7 @@ type EtherpadInstanceList struct {
 func init() {
         SchemeBuilder.Register(&EtherpadInstance{}, &EtherpadInstanceList{})
 }
-``` {{copy}}
+
+``` {{exec}}
 
 
