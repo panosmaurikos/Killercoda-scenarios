@@ -65,7 +65,7 @@ data:
       "editOnly": false
     }
 
-" > etherpad-config.yaml
+" > /root/etherpad-config.yaml
  ```{{exec}}
 ```
 
