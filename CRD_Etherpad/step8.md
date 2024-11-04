@@ -1,17 +1,20 @@
 ## Deploying the Custom Resource and verify the Deployment 
-After the changes, make sure we run the make command to update the generate files and apply the changes in a new tab.
+After the changes,apply the crd file.
+~~~
+kubectl apply -f config/crd/bases/etherpad.etherpadinstance.io_etherpadinstances.yaml
+~~~
+Check if the controller is working.
 ~~~
 make run
 ~~~
-Deploy the CR file , the CRD and configmap file to Kubernetes cluster:
+
+Deploy the CR file, to Kubernetes cluster:
 
 ~~~
 kubectl apply -f config/samples/etherpad_v1alpha1_etherpadinstance.yaml
 ~~~ 
 
-~~~
-kubectl apply -f config/crd/bases/etherpad.etherpadinstance.io_etherpadinstances.yaml
-~~~
+Create and apply config file.
 
 ``` 
 tee etherpad-config.yaml << 'END'
