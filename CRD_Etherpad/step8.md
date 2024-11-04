@@ -4,7 +4,7 @@ Start the controller.
 ~~~
 make run
 ~~~
-After the changes,apply the crd file.
+Apply the crd file.
 ~~~
 kubectl apply -f config/crd/bases/etherpad.etherpadinstance.io_etherpadinstances.yaml
 ~~~
