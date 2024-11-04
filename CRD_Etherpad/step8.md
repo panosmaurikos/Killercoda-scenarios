@@ -1,13 +1,13 @@
 ## Deploying the Custom Resource and verify the Deployment 
+
+Start the controller.
+~~~
+make run
+~~~
 After the changes,apply the crd file.
 ~~~
 kubectl apply -f config/crd/bases/etherpad.etherpadinstance.io_etherpadinstances.yaml
 ~~~
-Check if the controller is working.
-~~~
-make run
-~~~
-
 Deploy the CR file, to Kubernetes cluster:
 
 ~~~
