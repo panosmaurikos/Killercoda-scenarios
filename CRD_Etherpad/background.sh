@@ -5,7 +5,7 @@ sudo apt-get remove -y golang-go
 sudo apt-get autoremove -y
 
 
-GO_VERSION="1.23.1"
+GO_VERSION="1.23.4"
 
 wget https://golang.org/dl/go${GO_VERSION}.linux-amd64.tar.gz
 
